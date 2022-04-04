@@ -4,33 +4,45 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed; 
-     
-    
-
+   
+    public float speed = 0.1f; 
+    public Rigidbody rb; 
     
     // Start is called before the first frame update
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody>(); 
     }
 
     // Update is called once per frame
     void Update()
     {
-        float horizontalInput = Input.GetAxis("Horizontal"); 
-        float veritcalInput = Input.GetAxis("Vertical");
+      float xDirection = Input.GetAxis("Horizontal"); 
+      float zDirection = Input.GetAxis("Vertical"); 
 
-        Vector3 movementDirection = new Vector3(horizontalInput, 0 , veritcalInput); 
-        movementDirection.Normalize(); 
+      Vector3 moveDirection = new Vector3(-xDirection, 0.0f, -zDirection); 
 
-        transform.Translate(movementDirection * speed * Time.deltaTime, Space.World);
+      transform.position += moveDirection * speed; 
+      if(Input.GetButtonDown("Jump")){
+          rb.AddForce(new Vector3(0, 5, 0), ForceMode.Impulse); 
+
+      }
+
+
+     
+
+
+
+
+    }
+        
+        
        
 
         
 
         
-    }
+    
 
     
 
