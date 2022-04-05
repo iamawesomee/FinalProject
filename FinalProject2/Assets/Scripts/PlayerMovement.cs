@@ -23,7 +23,8 @@ public class PlayerMovement : MonoBehaviour
       Vector3 moveDirection = new Vector3(-xDirection, 0.0f, -zDirection); 
 
       transform.position += moveDirection * speed; 
-      if(Input.GetButtonDown("Jump")){
+      if(Input.GetButtonDown("Jump")) {
+          //
           rb.AddForce(new Vector3(0, 5, 0), ForceMode.Impulse); 
 
       }
