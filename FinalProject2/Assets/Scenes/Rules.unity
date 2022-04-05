@@ -923,9 +923,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "- If you are out of the water for more than 10 seconds you will die.\n-
-    Use \"A\" to move to the left. \n- Use \"D\" to move to ther right.\n- Use \"W\"
-    to move forward.\n- Use \"S\" to move backwards.\n- Space to jump. \n- DONT GET
-    EATEN!\n"
+    Use \"A\" to move backwards. \n- Use \"D\" to move forward.\n- Use \"W\" to move
+    to the left.\n- Use \"S\" to move to the right.\n- DONT GET EATEN!\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c93d170b3d7954e07b7a3bbb2414b441, type: 2}
   m_sharedMaterial: {fileID: 7751850398535662680, guid: c93d170b3d7954e07b7a3bbb2414b441, type: 2}
