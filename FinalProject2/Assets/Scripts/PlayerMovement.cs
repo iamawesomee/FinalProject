@@ -30,15 +30,16 @@ public class PlayerMovement : MonoBehaviour
 
       }
 
+     
+          
+         
 
     }
 
-    void OnTriggerEnter ( Collider other) {
-        if(other.gameObject.tag == "JumpScare") {
-            SceneManager.LoadScene("JumpScare");
-        }
 
-    }
+    
+
+    
         
         
        

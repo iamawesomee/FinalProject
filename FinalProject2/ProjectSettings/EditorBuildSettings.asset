@@ -29,4 +29,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/YouLoose.unity
     guid: 2e2995bfcfb364d92a0204324ad2526f
+  - enabled: 1
+    path: Assets/Scenes/help.unity
+    guid: 8d922c0ae10534bdea2506dc6957b51d
+  - enabled: 1
+    path: Assets/Scenes/meme.unity
+    guid: c340b621e1f9b4203bc15975e395bfc9
   m_configObjects: {}

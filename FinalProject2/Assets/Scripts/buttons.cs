@@ -9,6 +9,11 @@ public class buttons : MonoBehaviour
     }
 
     public void restartt(){
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Lvl2");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Lvl1");
+    }
+
+    public void Help() { 
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Lvl1");
+
     }
 }
