@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class water : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private void OnTriggerEnter(Collider other) {
+        if(other.CompareTag("Player") && other.GetComponent<FirstPersonMovement>() != null) {
+            FirstPersonMovement movement = other.GetComponent<FirstPersonMovement>();
+        }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    }
+    private void OnTriggerExit(Collider other) {
+
     }
 }
